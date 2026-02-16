@@ -104,7 +104,7 @@ The backend performs all algorithmic computations, while the frontend provides i
 ---
 
 ## 📂 Project Structure
-(
+
 ```
 automata-visualizer/
 │
@@ -136,9 +136,10 @@ automata-visualizer/
 │
 └── README.md
 
+```
 
 ---
-)
+
 
 ## ⚙️ Installation & Setup
 
@@ -215,5 +216,6 @@ LR/SLR/LALR parsing support
 Project saving & user authentication
 
 Dark mode support
+
 
 
