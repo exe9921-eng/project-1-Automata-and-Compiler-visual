@@ -1,128 +1,129 @@
-🎯 Automata & Compiler Visualizer
+**Automata & Compiler Visualizer**
 
 A full-stack educational web application for visualizing and working with Finite Automata (NFA, DFA) and Context-Free Grammars (CFG).
 
 Built using React, D3.js, FastAPI, and Python, this project helps students understand core concepts of Automata Theory and Compiler Design through interactive visualizations and algorithmic implementations.
 
-📌 Overview
+**Overview**
 
 The Automata & Compiler Visualizer is designed as an interactive learning tool for computer science students. It combines theoretical algorithms with graphical visualization to make complex concepts easier to understand.
 
-The system allows users to:
+  The system allows users to:
+  
+  Convert Regular Expressions → NFA
+  
+  Convert NFA → DFA
+  
+  Minimize a DFA
+  
+  Compute FIRST & FOLLOW sets
+  
+  Generate LL(1) Predictive Parsing Tables
+  
+  The backend handles algorithmic computation, while the frontend provides an interactive graph-based interface for visualization.
 
-Convert Regular Expressions → NFA
+**Key Features
+Automata Visualization
+Regex to NFA**
 
-Convert NFA → DFA
+  Implements Thompson’s Construction Algorithm
+  
+  Supports operators: *, +, |, (), ε
+  
+  Automatically generates epsilon transitions
+  
+  Interactive state graph visualization
 
-Minimize a DFA
+**NFA to DFA**
 
-Compute FIRST & FOLLOW sets
+  Uses Subset Construction Algorithm
+  
+  Computes epsilon-closures
+  
+  Generates deterministic automata from non-deterministic ones
+  
+  Displays resulting DFA visually
 
-Generate LL(1) Predictive Parsing Tables
+**DFA Minimization**
 
-The backend handles algorithmic computation, while the frontend provides an interactive graph-based interface for visualization.
+  Implements State Partitioning Algorithm
+  
+  Merges equivalent states
+  
+  Reduces number of states while preserving language recognition
 
-🚀 Key Features
-🔄 Automata Visualization
-1️⃣ Regex to NFA
+**Interactive Graph Features**
+  
+  Draggable nodes
+  
+  Zoom & pan functionality
+  
+  Color-coded states:
+  
+  🟢 Start state
+  
+  🔵 Accept states
+  
+  ⚪ Normal states
+  
+  📐 Context-Free Grammar (CFG) Tools
 
-Implements Thompson’s Construction Algorithm
+**1️⃣ FIRST Set Computation**
+  
+  Handles epsilon productions
+  
+  Works with recursive grammar rules
+  
+  Uses fixed-point iteration method
 
-Supports operators: *, +, |, (), ε
+**2️⃣ FOLLOW Set Computation**
 
-Automatically generates epsilon transitions
+  Computes terminal symbols that follow non-terminals
+  
+  Uses FIRST sets internally
+  
+  Handles epsilon propagation correctly
 
-Interactive state graph visualization
+**3️⃣ Predictive Parsing Table**
 
-2️⃣ NFA to DFA
+  Generates LL(1) parsing table
+  
+  Detects grammar conflicts
+  
+  Displays structured parsing matrix
 
-Uses Subset Construction Algorithm
+**Algorithms Implemented**
+  Algorithm	Purpose
+  Thompson’s Construction	Convert Regex → NFA
+  Subset Construction	Convert NFA → DFA
+  State Partitioning	Minimize DFA
+  FIRST Set Algorithm	Compute FIRST sets
+  FOLLOW Set Algorithm	Compute FOLLOW sets
+  LL(1) Table Construction	Build Predictive Parsing Table
+**Tech Stack
+Frontend**
 
-Computes epsilon-closures
+  React.js
+  
+  D3.js (Graph visualization)
+  
+  Tailwind CSS
+  
+  Vite
+  
+  Axios
 
-Generates deterministic automata from non-deterministic ones
+**Backend**
 
-Displays resulting DFA visually
+  FastAPI
+  
+  Python 3.8+
+  
+  Pydantic (Data validation)
+  
+  Uvicorn (ASGI server)
 
-3️⃣ DFA Minimization
-
-Implements State Partitioning Algorithm
-
-Merges equivalent states
-
-Reduces number of states while preserving language recognition
-
-🎨 Interactive Graph Features
-
-Draggable nodes
-
-Zoom & pan functionality
-
-Color-coded states:
-
-🟢 Start state
-
-🔵 Accept states
-
-⚪ Normal states
-
-📐 Context-Free Grammar (CFG) Tools
-1️⃣ FIRST Set Computation
-
-Handles epsilon productions
-
-Works with recursive grammar rules
-
-Uses fixed-point iteration method
-
-2️⃣ FOLLOW Set Computation
-
-Computes terminal symbols that follow non-terminals
-
-Uses FIRST sets internally
-
-Handles epsilon propagation correctly
-
-3️⃣ Predictive Parsing Table
-
-Generates LL(1) parsing table
-
-Detects grammar conflicts
-
-Displays structured parsing matrix
-
-🧠 Algorithms Implemented
-Algorithm	Purpose
-Thompson’s Construction	Convert Regex → NFA
-Subset Construction	Convert NFA → DFA
-State Partitioning	Minimize DFA
-FIRST Set Algorithm	Compute FIRST sets
-FOLLOW Set Algorithm	Compute FOLLOW sets
-LL(1) Table Construction	Build Predictive Parsing Table
-🛠 Tech Stack
-🔹 Frontend
-
-React.js
-
-D3.js (Graph visualization)
-
-Tailwind CSS
-
-Vite
-
-Axios
-
-🔹 Backend
-
-FastAPI
-
-Python 3.8+
-
-Pydantic (Data validation)
-
-Uvicorn (ASGI server)
-
-📂 Project Structure
+**Project Structure**
 automata-visualizer/
 │
 ├── backend/                          # Backend API (FastAPI + Algorithms)
@@ -153,60 +154,60 @@ automata-visualizer/
 │
 └── README.md
 
-⚙️ Installation & Setup
-1️⃣ Backend Setup
-cd backend
-python -m venv venv
-venv\Scripts\activate   # Windows
-# or source venv/bin/activate (Mac/Linux)
+**Installation & Setup
+1️⃣ Backend Setup**
+  cd backend
+  python -m venv venv
+  venv\Scripts\activate   # Windows
+  # or source venv/bin/activate (Mac/Linux)
 
-pip install -r requirements.txt
-python main.py
+  pip install -r requirements.txt
+  python main.py
+  
+  
+  Backend runs at:
+  
+  http://localhost:8000
+  
+  
+  API Documentation:
+  
+  http://localhost:8000/docs
 
+**2️⃣ Frontend Setup**
+  cd frontend
+  npm install
+  npm run dev
+  
+  Frontend runs at:
+  
+  http://localhost:5173
 
-Backend runs at:
+**Available API Endpoints**
 
-http://localhost:8000
+  POST /regex/to-nfa
+  
+  POST /nfa/to-dfa
+  
+  POST /dfa/minimize
+  
+  POST /cfg/first-follow
+  
+  POST /cfg/predictive-table
 
+**Educational Purpose**
 
-API Documentation:
+  This project is ideal for:
+  
+  Automata Theory coursework
+  
+  Compiler Design classes
+  
+  Academic demonstrations
+  
+  Algorithm visualization learning
+  
+  Understanding formal languages
 
-http://localhost:8000/docs
-
-2️⃣ Frontend Setup
-cd frontend
-npm install
-npm run dev
-
-
-Frontend runs at:
-
-http://localhost:5173
-
-📡 Available API Endpoints
-
-POST /regex/to-nfa
-
-POST /nfa/to-dfa
-
-POST /dfa/minimize
-
-POST /cfg/first-follow
-
-POST /cfg/predictive-table
-
-🎓 Educational Purpose
-
-This project is ideal for:
-
-Automata Theory coursework
-
-Compiler Design classes
-
-Academic demonstrations
-
-Algorithm visualization learning
-
-Understanding formal languages
 
 It bridges the gap between theoretical concepts and practical implementation.
