@@ -206,19 +206,8 @@ Understanding formal languages
 It bridges the gap between theory and practical implementation.
 
 
-🔹 Future Enhancements
 
-Step-by-step automata simulation
 
-String validation for automata
-
-Export automata as JSON/PNG/SVG
-
-LR/SLR/LALR parsing support
-
-Project saving & user authentication
-
-Dark mode support
 
 
 
