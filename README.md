@@ -165,6 +165,8 @@ API Documentation:
 
 http://localhost:8000/docs
 
+---
+
 🔹 Frontend Setup
 cd frontend
 npm install
@@ -174,6 +176,8 @@ npm run dev
 Frontend runs at:
 
 http://localhost:5173
+
+---
 
 📡 API Endpoints
 
@@ -186,6 +190,8 @@ POST /dfa/minimize
 POST /cfg/first-follow
 
 POST /cfg/predictive-table
+
+---
 
 🎓 Educational Purpose
 
@@ -203,6 +209,8 @@ Understanding formal languages
 
 It bridges the gap between theory and practical implementation.
 
+---
+
 🔮 Future Enhancements
 
 Step-by-step automata simulation
@@ -216,6 +224,7 @@ LR/SLR/LALR parsing support
 Project saving & user authentication
 
 Dark mode support
+
 
 
 
