@@ -1,4 +1,4 @@
-# 🎯 Automata & Compiler Visualizer
+#  Automata & Compiler Visualizer
 
 A full-stack web application for visualizing and working with **Finite Automata (NFA, DFA)** and **Context-Free Grammars (CFG)**.
 
@@ -6,26 +6,26 @@ Built with **React, D3.js, FastAPI, and Python**, this project provides an inter
 
 ---
 
-## 📌 Overview
+##  Overview
 
 The **Automata & Compiler Visualizer** is designed as an educational tool for students and developers. It combines theoretical algorithms with graphical visualization to make complex formal language and compiler concepts easier to understand.
 
 The system supports:
 
-- ✅ Regular Expression → NFA conversion  
-- ✅ NFA → DFA conversion  
-- ✅ DFA Minimization  
-- ✅ FIRST set computation  
-- ✅ FOLLOW set computation  
-- ✅ LL(1) Predictive Parsing Table generation  
+-  Regular Expression → NFA conversion  
+-  NFA → DFA conversion  
+-  DFA Minimization  
+-  FIRST set computation  
+-  FOLLOW set computation  
+-  LL(1) Predictive Parsing Table generation  
 
 The backend performs all algorithmic computations, while the frontend provides interactive graph-based visualization.
 
 ---
 
-## 🚀 Features
+##  Features
 
-### 🔄 Automata Operations
+###  Automata Operations
 
 ### 1️⃣ Regex to NFA
 - Implements **Thompson’s Construction Algorithm**
@@ -44,7 +44,7 @@ The backend performs all algorithmic computations, while the frontend provides i
 - Merges equivalent states
 - Reduces automata size while preserving language recognition
 
-### 🎨 Interactive Graph Features
+###  Interactive Graph Features
 - Draggable nodes
 - Zoom & pan functionality
 - Color-coded states:
@@ -54,7 +54,7 @@ The backend performs all algorithmic computations, while the frontend provides i
 
 ---
 
-## 📐 Context-Free Grammar Tools
+##  Context-Free Grammar Tools
 
 ### 1️⃣ FIRST Set Computation
 - Handles epsilon productions
@@ -73,7 +73,7 @@ The backend performs all algorithmic computations, while the frontend provides i
 
 ---
 
-## 🧠 Algorithms Implemented
+##  Algorithms Implemented
 
 | Algorithm | Purpose |
 |------------|----------|
@@ -103,7 +103,7 @@ The backend performs all algorithmic computations, while the frontend provides i
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 automata-visualizer/
@@ -141,9 +141,9 @@ automata-visualizer/
 ---
 
 
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
-### 🔹 Backend Setup
+🔹 Backend Setup
 
 ```bash
 cd backend
@@ -165,21 +165,18 @@ API Documentation:
 
 http://localhost:8000/docs
 
----
 
-### 🔹 Frontend Setup
+🔹 Frontend Setup
 cd frontend
 npm install
 npm run dev
-
 
 Frontend runs at:
 
 http://localhost:5173
 
----
 
-### 📡 API Endpoints
+🔹 API Endpoints
 
 POST /regex/to-nfa
 
@@ -191,9 +188,8 @@ POST /cfg/first-follow
 
 POST /cfg/predictive-table
 
----
 
-### 🎓 Educational Purpose
+🔹 Educational Purpose
 
 This project is ideal for:
 
@@ -209,9 +205,8 @@ Understanding formal languages
 
 It bridges the gap between theory and practical implementation.
 
----
 
-🔮 Future Enhancements
+🔹 Future Enhancements
 
 Step-by-step automata simulation
 
@@ -224,6 +219,7 @@ LR/SLR/LALR parsing support
 Project saving & user authentication
 
 Dark mode support
+
 
 
 
