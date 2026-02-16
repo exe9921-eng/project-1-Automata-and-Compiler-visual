@@ -167,7 +167,7 @@ http://localhost:8000/docs
 
 ---
 
-🔹 Frontend Setup
+### 🔹 Frontend Setup
 cd frontend
 npm install
 npm run dev
@@ -179,7 +179,7 @@ http://localhost:5173
 
 ---
 
-📡 API Endpoints
+### 📡 API Endpoints
 
 POST /regex/to-nfa
 
@@ -193,7 +193,7 @@ POST /cfg/predictive-table
 
 ---
 
-🎓 Educational Purpose
+### 🎓 Educational Purpose
 
 This project is ideal for:
 
@@ -224,6 +224,7 @@ LR/SLR/LALR parsing support
 Project saving & user authentication
 
 Dark mode support
+
 
 
 
