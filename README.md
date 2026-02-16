@@ -104,7 +104,7 @@ The backend performs all algorithmic computations, while the frontend provides i
 ---
 
 ## 📂 Project Structure
-
+```
 automata-visualizer/
 │
 ├── backend/ # FastAPI backend (API + Algorithms)
@@ -213,3 +213,4 @@ LR/SLR/LALR parsing support
 Project saving & user authentication
 
 Dark mode support
+
