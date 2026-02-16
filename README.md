@@ -154,6 +154,7 @@ automata-visualizer/
 │
 └── README.md
 
+
 **Installation & Setup
 1️⃣ Backend Setup**
   cd backend
@@ -211,3 +212,4 @@ automata-visualizer/
 
 
 It bridges the gap between theoretical concepts and practical implementation.
+
