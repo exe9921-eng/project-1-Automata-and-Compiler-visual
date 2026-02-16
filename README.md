@@ -86,7 +86,7 @@ The backend performs all algorithmic computations, while the frontend provides i
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 ### 🔹 Frontend
 - React.js  
@@ -219,6 +219,7 @@ LR/SLR/LALR parsing support
 Project saving & user authentication
 
 Dark mode support
+
 
 
 
